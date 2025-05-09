@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@800&display=swap');
+
+body{
+    margin: 0;
+    font-family: 'Manrope', sans-serif;
+    font-weight: 800;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: hsl(218, 23%, 16%);
+}
+
+.card{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: hsl(217, 19%, 24%);
+    padding: 24px;
+    padding-bottom: 64px;
+    border-radius: 24px;
+}
+
+.advice-number{
+    color: hsl(150, 100%, 66%);
+    font-size: 14px;
+}
+
+.advice{
+    color: white;
+    margin: 20px 0;
+    font-size: 28px;
+}
+
+.advice-button{
+    position: absolute;
+    left: 50%; /* Centers the button horizontally */
+    bottom: -30px; /* Positions the button at the bottom of the card */
+    transform: translateX(-50%); /* Moves the button back to the center */ 
+    background-color: hsl(150, 100%, 66%);
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+}
+
+.advice-button:hover {
+  box-shadow: 0 0 20px hsla(150, 100%, 66%, 0.7);
+}
