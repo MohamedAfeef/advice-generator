@@ -12,6 +12,7 @@ body{
     align-items: center;
     height: 100vh;
     background-color: hsl(218, 23%, 16%);
+    padding: 20px;
 }
 
 .card{
@@ -23,6 +24,8 @@ body{
     padding: 24px;
     padding-bottom: 64px;
     border-radius: 24px;
+    width: 90%;
+    max-width: 400px;
 }
 
 .advice-number{
@@ -36,11 +39,17 @@ body{
     font-size: 28px;
 }
 
+@media (max-width: 600px) {
+  .advice-divider img {
+    content: url('./images/pattern-divider-mobile.svg');
+  }
+}
+
 .advice-button{
     position: absolute;
-    left: 50%; /* Centers the button horizontally */
-    bottom: -30px; /* Positions the button at the bottom of the card */
-    transform: translateX(-50%); /* Moves the button back to the center */ 
+    left: 50%;
+    bottom: -30px;
+    transform: translateX(-50%);
     background-color: hsl(150, 100%, 66%);
     height: 60px;
     width: 60px;
@@ -53,5 +62,9 @@ body{
 }
 
 .advice-button:hover {
+  box-shadow: 0 0 20px hsla(150, 100%, 66%, 0.7);
+}
+
+.advice-button:active {
   box-shadow: 0 0 20px hsla(150, 100%, 66%, 0.7);
 }
